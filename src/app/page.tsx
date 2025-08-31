@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import MenuSpecials from "../components/MenuSpecials";
 import Reviews from "../components/Reviews";
+import Delivery from "../components/Delivery";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <MenuSpecials />
       <Reviews />
+      <Delivery />
     </>
   );
 }
