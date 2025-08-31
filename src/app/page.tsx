@@ -8,6 +8,7 @@ import Reviews from "../components/Reviews";
 import Delivery from "../components/Delivery";
 import FAQs from "../components/FAQs";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Delivery />
       <FAQs />
       <Contact />
+      <Footer />
     </>
   );
 }
