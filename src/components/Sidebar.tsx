@@ -4,10 +4,9 @@ import { navlinks } from "../data/navlinks";
 interface SidebarProps {
   open: boolean;
   onClose: () => void;
-  showContact?: boolean;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ open, onClose, showContact = true }) => {
+const Sidebar: React.FC<SidebarProps> = ({ open, onClose }) => {
   return (
     <>
       {/* Fullscreen overlay */}
@@ -35,15 +34,14 @@ const Sidebar: React.FC<SidebarProps> = ({ open, onClose, showContact = true }) 
               {link.name}
             </a>
           ))}
-          {showContact && (
-            <a
-              href="#contact"
-              className="mt-4 bg-[var(--brown-var,#A87634)] text-white px-8 py-3 rounded-lg font-medium text-lg font-inter shadow hover:scale-105 hover:-rotate-1.5 hover:shadow-lg focus:scale-105 focus:-rotate-1.5 focus:shadow-lg transition-transform duration-200"
-              onClick={onClose}
-            >
-              Contact Us
-            </a>
-          )}
+          {/* Show contact only on small screens; hidden on md and up since navbar already shows it there */}
+          <a
+            href="#contact"
+            className="mt-4 bg-[var(--brown-var,#A87634)] text-white px-8 py-3 rounded-lg font-medium text-lg font-inter shadow hover:scale-105 hover:-rotate-1.5 hover:shadow-lg focus:scale-105 focus:-rotate-1.5 focus:shadow-lg transition-transform duration-200 md:hidden"
+            onClick={onClose}
+          >
+            Contact Us
+          </a>
         </nav>
       </div>
     </>

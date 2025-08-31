@@ -65,7 +65,6 @@ const Navbar = () => {
 					<Sidebar
 						open={menuOpen}
 						onClose={() => setMenuOpen(false)}
-						showContact={window.innerWidth < 768}
 					/>
 				</div>
 			</nav>
