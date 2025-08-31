@@ -6,6 +6,7 @@ import About from "../components/About";
 import MenuSpecials from "../components/MenuSpecials";
 import Reviews from "../components/Reviews";
 import Delivery from "../components/Delivery";
+import FAQs from "../components/FAQs";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <MenuSpecials />
       <Reviews />
       <Delivery />
+      <FAQs />
     </>
   );
 }
