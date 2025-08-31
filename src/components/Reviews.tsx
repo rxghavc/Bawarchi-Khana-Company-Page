@@ -42,7 +42,7 @@ export default function Reviews() {
 	}), [paused]);
 
 	return (
-		<section className="w-full flex justify-center py-12 lg:py-16">
+		<section id="reviews" className="w-full flex justify-center py-12 lg:py-16">
 			<div className="w-full max-w-[1440px] px-4 sm:px-10 md:px-16 lg:px-20">
 					<h2 className="text-3xl md:text-4xl font-bold text-[#222] mb-6 md:mb-8 text-center md:text-center lg:text-left">
 							<span className="md:hidden">What Customers Say</span>

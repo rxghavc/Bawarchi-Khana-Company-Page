@@ -27,6 +27,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Smooth scroll for in-page anchor links (nav jumps) */
+html { scroll-behavior: smooth; }
+
 /* Reviews marquee animation */
 @keyframes marquee-right {
   0% { transform: translateX(-50%); }

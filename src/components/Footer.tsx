@@ -12,7 +12,7 @@ export default function Footer() {
 		<footer className="w-full flex justify-center border-t border-black/10 mt-10">
 			<div className="w-full max-w-[1440px] px-4 sm:px-10 md:px-16 lg:px-20 py-8 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-4">
 				{/* Left: Brand + small print */}
-				<div className="flex-1 w-full md:w-auto">
+			<div className="flex-1 w-full md:w-auto text-center md:text-left">
 					<div className="text-[22px] md:text-[24px] leading-[150%] text-[var(--brown-var,#A87634)] whitespace-nowrap select-none font-['Edu_NSW_ACT_Cursive',cursive]">
 						Bawarchi Khana
 					</div>
