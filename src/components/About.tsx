@@ -11,7 +11,7 @@ const About = () => {
         </h2>
 
         {/* Row 1: Socials (right) */}
-        <div className="order-1 md:order-2 flex items-center justify-start md:justify-end gap-4 md:col-start-2">
+  <div className="order-1 md:order-2 flex items-center md:items-center lg:items-start md:self-center lg:self-start justify-start md:justify-end gap-4 md:col-start-2 mb-4 md:mb-0">
           <div className="inline-flex items-center gap-2 text-[var(--brown-var,#A87634)] font-semibold tracking-wide text-lg md:text-xl">
             <span className="md:hidden lg:inline">View our Socials</span>
             <span className="hidden md:inline lg:hidden">View Socials</span>
