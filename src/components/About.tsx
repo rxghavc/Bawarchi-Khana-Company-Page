@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube, FaArrowRight } from "react-icons/fa";
+import { FaYoutube, FaInstagram, FaWhatsapp, FaArrowRight } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -17,18 +17,15 @@ const About = () => {
             <span className="hidden md:inline lg:hidden">View Socials</span>
             <FaArrowRight className="translate-y-[1px]" />
           </div>
-          <div className="flex items-center gap-4 text-[#222]">
-            <a href="#facebook" aria-label="Facebook" className="hover:opacity-80 transition-opacity">
-              <FaFacebookF size={20} />
-            </a>
-            <a href="#linkedin" aria-label="LinkedIn" className="hover:opacity-80 transition-opacity">
-              <FaLinkedinIn size={20} />
+          <div className="flex mt-1 items-center gap-4 text-[#222]">
+            <a href="#youtube" aria-label="YouTube" className="hover:opacity-80 transition-opacity">
+              <FaYoutube size={22} />
             </a>
             <a href="#instagram" aria-label="Instagram" className="hover:opacity-80 transition-opacity">
               <FaInstagram size={20} />
             </a>
-            <a href="#youtube" aria-label="YouTube" className="hover:opacity-80 transition-opacity">
-              <FaYoutube size={22} />
+            <a href="#whatsapp" aria-label="WhatsApp" className="hover:opacity-80 transition-opacity">
+              <FaWhatsapp size={22} />
             </a>
           </div>
         </div>
