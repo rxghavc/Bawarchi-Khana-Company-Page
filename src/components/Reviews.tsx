@@ -18,8 +18,8 @@ function ReviewCard({ rating, quote, name, location }: CardProps) {
 					<FaStar key={i} className={i < rating ? "fill-yellow-400" : "fill-gray-200 text-gray-200"} size={18} />
 				))}
 			</div>
-			<blockquote className="text-xl font-semibold text-[#222] mb-4">“{quote}”</blockquote>
-			<div className="text-sm">
+			<blockquote className="text-sm md:text-lg font-semibold text-[#222] mb-4">“{quote}”</blockquote>
+			<div className="text-xs md:text-sm">
 				<div className="text-[#222] font-semibold">{name}</div>
 				<div className="text-gray-500">{location}</div>
 			</div>
@@ -37,7 +37,7 @@ export default function Reviews() {
 	const next = () => setIndex((i) => (i + 1) % count);
 
 	const trackStyle = useMemo<React.CSSProperties>(() => ({
-		animation: "marquee-right 35s linear infinite",
+		animation: "marquee-left 35s linear infinite",
 		animationPlayState: paused ? "paused" : "running",
 	}), [paused]);
 
@@ -56,7 +56,7 @@ export default function Reviews() {
 								onMouseEnter={() => setPaused(true)}
 								onMouseLeave={() => setPaused(false)}
 							>
-								<div className="marquee-track flex gap-6 will-change-transform" style={trackStyle}>
+								<div className="marquee-track flex items-start gap-6 will-change-transform" style={trackStyle}>
 							{[...reviews, ...reviews].map((r, i) => (
 								<ReviewCard key={i} {...r} />
 							))}
