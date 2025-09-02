@@ -23,22 +23,22 @@ const Hero = () => {
 			{/* Content */}
 					<div className="relative z-20 flex flex-col items-start justify-center h-full px-4 sm:px-8 md:px-20 w-full">
 					<h1 className="text-white text-5xl md:text-7xl font-bold leading-tight md:leading-[1.1] mb-8 sm:mb-10 max-w-full sm:max-w-2xl md:max-w-3xl" style={{ fontFamily: 'Inter, Arial, sans-serif' }}>
-						Fresh Home-Cooked Meals, Delivered to Your Door
+						Fresh Home-Cooked Meals, With Healthy Ingredients
 					</h1>
 						<div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full max-w-xs sm:max-w-none">
 							<a
-								href="#whatsapp"
+								href="https://chat.whatsapp.com/FZjAdvHCQ5aKOy4J0A2L5r"
 								className="flex items-center justify-center gap-2 bg-[var(--brown-var,#A87634)] text-white text-base sm:text-lg font-medium px-5 sm:px-7 py-3 rounded-md shadow hover:scale-105 hover:shadow-lg transition-transform duration-200 w-full sm:w-auto"
 								style={{ fontFamily: 'Inter, Arial, sans-serif' }}
 							>
 								<FaWhatsapp className="text-xl sm:text-2xl" /> WhatsApp Community
 							</a>
 							<a
-								href="#contact"
+								href="https://wa.me/+447821640462"
 								className="flex items-center justify-center gap-2 bg-white text-black text-base sm:text-lg font-medium px-5 sm:px-7 py-3 rounded-md shadow border border-gray-200 hover:scale-105 hover:shadow-lg transition-transform duration-200 w-full sm:w-auto"
 								style={{ fontFamily: 'Inter, Arial, sans-serif' }}
 							>
-								<FaPhoneAlt className="text-lg sm:text-xl" /> Contact Us
+								<FaPhoneAlt className="text-lg sm:text-xl" /> Contact The Cook
 							</a>
 						</div>
 					</div>
