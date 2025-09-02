@@ -34,7 +34,7 @@ const Navbar = () => {
 							href="#contact"
 							className="bg-[var(--brown-var,#A87634)] text-white px-8 py-3 rounded-lg font-medium text-[1.05rem] font-inter shadow transition-transform duration-200 hover:scale-110 hover:-rotate-1.5 hover:shadow-lg focus:scale-110 focus:-rotate-1.5 focus:shadow-lg inline-block border-0 cursor-pointer"
 						>
-							Contact Us
+							Party Orders
 						</a>
 					</div>
 					{/* Desktop nav (lg and up) */}
@@ -57,7 +57,7 @@ const Navbar = () => {
 								className="ml-6 bg-[var(--brown-var,#A87634)] text-white px-8 py-[0.7rem] rounded-lg font-medium text-[1.05rem] font-inter shadow transition-transform duration-200 hover:scale-110 hover:-rotate-1.5 hover:shadow-lg focus:scale-110 focus:-rotate-1.5 focus:shadow-lg inline-block border-0 cursor-pointer"
 								style={{marginLeft: 24}}
 							>
-								Contact Us
+								Party Orders
 							</a>
 						</li>
 					</ul>
