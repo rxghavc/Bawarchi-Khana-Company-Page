@@ -86,7 +86,7 @@ export default function MenuSpecials() {
 				{/* CTA */}
 			<div className="w-full flex justify-center mt-8">
 					<a
-						href="https://unsplash.com/"
+						href="https://www.instagram.com/bawarchi.khana65?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
 						target="_blank"
 						rel="noreferrer noopener"
 						className="bg-[var(--brown-var,#A87634)] text-white px-6 py-3 rounded-lg font-medium shadow transition-transform duration-200 hover:scale-105"

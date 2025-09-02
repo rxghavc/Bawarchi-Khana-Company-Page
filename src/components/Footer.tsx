@@ -43,14 +43,14 @@ export default function Footer() {
 						<FaYoutube size={20} />
 					</a>
 					<a
-						href="#instagram"
+						href="https://www.instagram.com/bawarchi.khana65?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
 						aria-label="Instagram"
 						className="text-gray-500 hover:text-[var(--brown-var,#A87634)] transition inline-flex"
 					>
 						<FaInstagram size={20} />
 					</a>
 					<a
-						href="#whatsapp"
+						href="https://chat.whatsapp.com/FZjAdvHCQ5aKOy4J0A2L5r"
 						aria-label="WhatsApp"
 						className="text-gray-500 hover:text-[var(--brown-var,#A87634)] transition inline-flex"
 					>
