@@ -21,10 +21,10 @@ const About = () => {
             <a href="#youtube" aria-label="YouTube" className="hover:opacity-80 transition-opacity">
               <FaYoutube size={22} />
             </a>
-            <a href="#instagram" aria-label="Instagram" className="hover:opacity-80 transition-opacity">
+            <a href="https://www.instagram.com/bawarchi.khana65?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram" className="hover:opacity-80 transition-opacity">
               <FaInstagram size={20} />
             </a>
-            <a href="#whatsapp" aria-label="WhatsApp" className="hover:opacity-80 transition-opacity">
+            <a href="https://chat.whatsapp.com/FZjAdvHCQ5aKOy4J0A2L5r" aria-label="WhatsApp" className="hover:opacity-80 transition-opacity">
               <FaWhatsapp size={22} />
             </a>
           </div>
@@ -33,12 +33,13 @@ const About = () => {
         {/* Row 2: Paragraphs (left) */}
   <div className="order-3 md:order-3 text-[#222] leading-relaxed space-y-4 text-[15px] md:text-base md:col-span-2 lg:col-span-1 lg:col-start-1">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non dui maximus, dictum lorem eu, ornare lacus. Mauris ut mi ac ex egestas bibendum eu a quam.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus metus eget arcu lacinia, sit amet mattis dolor maximus. Nam blandit ultrices tincidunt.
+            At the heart of Bawarchi Khan is a passionate home chef who has been perfecting her craft for over 30 years. Cooking has always been more than just a daily routine for her – it’s an art, a tradition, and a way of bringing people together.
           </p>
           <p>
-            Morbi ullamcorper ac erat feugiat iaculis. Quisque quis dolor dolor. Vestibulum vitae neque vitae elit eleifend rhoncus non eget nunc. Quisque vitae ornare leo.
-            Praesent ultrices dui et felis pretium aliquet. Duis sit amet massa metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            Every dish is lovingly prepared in her own kitchen, using only fresh, carefully selected ingredients. With decades of experience and a deep knowledge of authentic flavors, she ensures that each recipe carries the warmth of home cooking and the richness of tradition.
+          </p>
+          <p>
+            Her dedication and personal touch shine through in every meal – from the very first bite, you’ll taste not just food, but the love, care, and expertise of someone who has devoted a lifetime to the kitchen.  
           </p>
         </div>
 
