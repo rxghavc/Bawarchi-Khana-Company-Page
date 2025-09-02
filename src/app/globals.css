@@ -30,8 +30,9 @@ body {
 /* Smooth scroll for in-page anchor links (nav jumps) */
 html { scroll-behavior: smooth; }
 
-/* Reviews marquee animation */
-@keyframes marquee-right {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0%); }
+
+/* Right-to-left Reviews */
+@keyframes marquee-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
 }
