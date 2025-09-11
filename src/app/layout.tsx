@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bawarchi Khana | Catering",
+  title: "Bawarchi Khaana | Catering",
   description: "Delicious food for all occasions",
 };
 
