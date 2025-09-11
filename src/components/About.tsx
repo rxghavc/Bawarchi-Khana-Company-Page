@@ -33,7 +33,7 @@ const About = () => {
         {/* Row 2: Paragraphs (left) */}
   <div className="order-3 md:order-3 text-[#222] leading-relaxed space-y-4 text-[15px] md:text-base md:col-span-2 lg:col-span-1 lg:col-start-1">
           <p>
-            At the heart of Bawarchi Khan is a passionate home chef who has been perfecting her craft for over 30 years. Cooking has always been more than just a daily routine for her – it’s an art, a tradition, and a way of bringing people together.
+            At the heart of Bawarchi Khaana is a passionate home chef who has been perfecting her craft for over 30 years. Cooking has always been more than just a daily routine for her – it’s an art, a tradition, and a way of bringing people together.
           </p>
           <p>
             Every dish is lovingly prepared in her own kitchen, using only fresh, carefully selected ingredients. With decades of experience and a deep knowledge of authentic flavors, she ensures that each recipe carries the warmth of home cooking and the richness of tradition.

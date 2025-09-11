@@ -5,6 +5,8 @@ import { FaChevronDown } from "react-icons/fa";
 
 export default function FAQs() {
 	const [openIndex, setOpenIndex] = useState<number | null>(null);
+	// Mobile: whether to reveal all FAQs (we initially show a subset)
+	const [showAllMobile, setShowAllMobile] = useState(false);
 
 	const toggle = (i: number) => {
 		setOpenIndex((prev) => (prev === i ? null : i));
@@ -15,14 +17,16 @@ export default function FAQs() {
 			<div className="w-full max-w-[1440px] px-4 sm:px-10 md:px-16 lg:px-20">
 				<h2 className="text-3xl md:text-4xl font-bold text-[var(--brown-var,#A87634)] mb-8 md:mb-10">Frequently Asked Questions</h2>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+				<div className="grid grid-cols-1 gap-2 md:gap-2">
 					{faqs.map((item, i) => {
 						const isOpen = openIndex === i;
+						// Hide beyond the first 4 on mobile until "See more" clicked
+						const hideOnMobile = !showAllMobile && i >= 4;
 						return (
 							<button
 								key={i}
 								onClick={() => toggle(i)}
-								className="text-left rounded-xl border border-black/10 bg-white p-6 shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--brown-var,#A87634)]"
+								className={`text-left rounded-xl border border-black/10 bg-white p-6 shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--brown-var,#A87634)] ${hideOnMobile ? "hidden md:block" : "block"}`}
 								aria-expanded={isOpen}
 							>
 								<div className="flex items-start justify-between gap-4">
@@ -41,6 +45,17 @@ export default function FAQs() {
 							</button>
 						);
 					})}
+				</div>
+
+				{/* Mobile: See more / See less toggle */}
+				<div className="md:hidden flex justify-center mt-6">
+					<button
+						onClick={() => setShowAllMobile((s) => !s)}
+						className="bg-[var(--brown-var,#A87634)] text-white px-6 py-3 rounded-md font-medium shadow transition-transform duration-200 hover:scale-105"
+						aria-expanded={showAllMobile}
+					>
+						{showAllMobile ? "See less" : "See more"}
+					</button>
 				</div>
 			</div>
 		</section>

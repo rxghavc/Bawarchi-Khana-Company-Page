@@ -12,7 +12,7 @@ export default function Delivery() {
 				</div>
 
 				{/* Cards */}
-				<div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+				<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
 					{deliveryCards.map((c, idx) => (
 						<div key={idx} className="rounded-xl border border-black/10 bg-white p-6 shadow-sm">
 							<h3 className="text-lg md:text-xl font-semibold text-[#222] mb-2">{c.title}</h3>

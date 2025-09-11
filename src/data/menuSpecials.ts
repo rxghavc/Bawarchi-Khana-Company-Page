@@ -8,21 +8,21 @@ export type Dish = {
 // Note: filenames contain spaces and '#'. Use URL-encoded paths to avoid issues in URLs.
 export const menuSpecials: Dish[] = [
   {
-    title: "Chicken Biryani",
+    title: "Nihari",
     body: "Body text for whatever you’d like to add more about the dish.",
     src: "/special_1.jpg",
-    alt: "Chicken Biryani",
+    alt: "Nihari",
   },
   {
-    title: "Kottu Parotta",
+    title: "Kheer",
     body: "Body text for whatever you’d like to add more about the dish.",
     src: "/special_2.jpg",
-    alt: "Kottu Parotta",
+    alt: "Kheer",
   },
   {
-    title: "Vegetable Salad",
+    title: "Mixed Platter",
     body: "Body text for whatever you’d like to add more about the dish.",
     src: "/special_3.jpg",
-    alt: "Vegetable Salad",
+    alt: "Mixed Platter",
   },
 ];
