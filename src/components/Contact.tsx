@@ -1,11 +1,39 @@
 "use client";
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function Contact() {
-	const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+	const [status, setStatus] = useState<"idle"|"loading"|"success"|"error">("idle");
+	const [errorMsg, setErrorMsg] = useState<string>("");
+
+	const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		// UI only for now
+		if (status === "loading") return;
+		setStatus("loading");
+		setErrorMsg("");
+
+		const form = e.currentTarget;
+		const formData = new FormData(form);
+		const payload = Object.fromEntries(formData.entries());
+
+		try {
+			const res = await fetch("/api/contact", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify(payload),
+			});
+			const data = await res.json();
+			if (!res.ok || !data.ok) {
+				throw new Error(data.error || "Failed to send message");
+			}
+			setStatus("success");
+			form.reset();
+			setTimeout(() => setStatus("idle"), 4000);
+		} catch (err: any) {
+			setStatus("error");
+			setErrorMsg(err.message || "Something went wrong");
+			setTimeout(() => setStatus("idle"), 6000);
+		}
 	};
 
 	return (
@@ -89,12 +117,24 @@ export default function Contact() {
 						/>
 					</div>
 
+					{status === "error" && (
+						<div className="text-center text-sm text-red-600 font-medium">
+							{errorMsg}
+						</div>
+					)}
+					{status === "success" && (
+						<div className="text-center text-sm text-green-600 font-medium">
+							Message sent successfully!
+						</div>
+					)}
+
 					<div className="flex justify-center">
 						<button
 							type="submit"
-							className="inline-flex items-center justify-center rounded-md bg-[var(--brown-var,#A87634)] px-5 py-2.5 text-white font-semibold shadow-sm hover:opacity-90 active:scale-95"
+							disabled={status === "loading"}
+							className="inline-flex items-center justify-center rounded-md bg-[var(--brown-var,#A87634)] px-5 py-2.5 text-white font-semibold shadow-sm hover:opacity-90 active:scale-95 disabled:opacity-60 disabled:cursor-not-allowed"
 						>
-							Send Message
+							{status === "loading" ? "Sending..." : "Send Message"}
 						</button>
 					</div>
 				</form>
