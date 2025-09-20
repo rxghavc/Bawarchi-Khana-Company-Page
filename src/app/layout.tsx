@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bawarchi Khaana | Catering",
+  title: "Bawarchi Khaana | Halal Catering",
   description: "Delicious food for all occasions",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
