@@ -36,7 +36,7 @@ export default function Footer() {
 				{/* Right: Social icons */}
 				<div className="flex-1 w-full md:w-auto flex justify-center md:justify-end gap-4">
 					<a
-						href="#youtube"
+						href="https://www.youtube.com/@bawarchikhana-p6u/featured"
 						aria-label="YouTube"
 						className="text-gray-500 hover:text-[var(--brown-var,#A87634)] transition inline-flex"
 					>

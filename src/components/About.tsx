@@ -18,7 +18,7 @@ const About = () => {
             <FaArrowRight className="translate-y-[1px]" />
           </div>
           <div className="flex mt-1 items-center gap-4 text-[#222]">
-            <a href="#youtube" aria-label="YouTube" className="hover:opacity-80 transition-opacity">
+            <a href="https://www.youtube.com/@bawarchikhana-p6u/featured" aria-label="YouTube" className="hover:opacity-80 transition-opacity">
               <FaYoutube size={22} />
             </a>
             <a href="https://www.instagram.com/bawarchi.khana65?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram" className="hover:opacity-80 transition-opacity">
